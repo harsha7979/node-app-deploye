@@ -1,4 +1,4 @@
-name: CICD for Youtube
+name: node-app-deploye
 
 on:
   push:
@@ -40,13 +40,6 @@ jobs:
           key:  ${{ secrets.KEY }}
           port:  ${{ secrets.PORT }}
         
-               nvm instal 14
-               npm install -g pm2
-               cd ~/node-app-deploye
-               git pull origin main
-               npm install
-               npm run build
-               pm2 restart api
-            
+             
 
 
