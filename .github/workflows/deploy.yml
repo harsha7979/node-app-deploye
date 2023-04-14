@@ -1,6 +1,7 @@
 name: CICD For demo
 
-on: push
+on: 
+  push:
     branches:
         -main
 
